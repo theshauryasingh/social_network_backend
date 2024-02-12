@@ -22,7 +22,7 @@ from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 router.register(r'users', views.CustomUserViewSet, basename='users')
-router.register(r'friend-requests', views.FriendRequestViewSet, basename='friend-requests')
+router.register(r'friendrequests', views.FriendRequestViewSet, basename='friendrequests')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
